@@ -4,6 +4,7 @@
     --secondary-color: #FFBB1C;
     --text-color: white;
     --main-gap: 10px;
+    --section-padding: 80px;
 }
 
 * {
@@ -17,6 +18,7 @@
 body {
     font-family: "Inter", sans-serif;
 }
+
 /* Akazan Font */
 @font-face {
     font-family: Akazan;
@@ -55,12 +57,27 @@ body {
     }
 }
 
-.btn {
+.link {
+    text-decoration: none;
     padding: 12px 34px;
     border-radius: 110px;
     border: none;
     font-size: 14px;
     color: black;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+    color: #101828;
+}
+
+.title+p {
+    color: #475467;
+    line-height: 24px;
+    text-align: center;
+    margin-top: 24px;
 }
 
 /* End Components */
@@ -210,6 +227,7 @@ header .call p:last-child {
 .home .container .content h1 {
     font-size: 52px;
     font-weight: 600;
+    text-transform: capitalize;
 }
 
 .home .container .content p {
@@ -231,12 +249,12 @@ header .call p:last-child {
     }
 }
 
-.home .container .content .btn:first-of-type {
+.home .container .content .link:first-of-type {
     color: var(--text-color);
     background-color: #3CAB90;
 }
 
-.home .container .content .btn:last-of-type {
+.home .container .content .link:last-of-type {
     margin-left: 10px;
     background-color: var(--secondary-color);
 }
@@ -247,7 +265,7 @@ header .call p:last-child {
         flex-direction: column;
     }
 
-    .home .container .content .btn:last-of-type {
+    .home .container .content .link:last-of-type {
         margin: 10px 0 0;
     }
 }
@@ -256,13 +274,15 @@ header .call p:last-child {
 
 /* start friend section */
 
+.friend {
+    padding: var(--section-padding) 0;
+}
+
 .friend .container {
     display: flex;
     justify-content: center;
     align-self: center;
     gap: 23px;
-    padding-top: 80px;
-    padding-bottom: 80px;
 }
 
 .friend .container .text {
@@ -373,13 +393,6 @@ header .call p:last-child {
 
 /* end friend section */
 
-
-
-
-
-
-
-
 /* start power section */
 .power {
     background-image: url(../images/bgr2.png);
@@ -426,9 +439,107 @@ header .call p:last-child {
     }
 }
 
-.power .container .content .btn {
+.power .container .content .link {
     background-color: var(--secondary-color);
     color: black;
 }
 
 /* end power section */
+
+/* start kit section */
+
+.kit {
+    padding: var(--section-padding) 0px;
+}
+
+.kit .container .content {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 32px;
+}
+
+.kit .container .content .item {
+    box-shadow: 0px 4px 30px 0px #0000000d;
+}
+
+.kit .container .content .item img {
+    width: 100%;
+}
+
+.kit .container .content .item .text {
+    padding: 20px;
+}
+
+.kit .container .content .item .text h3 {
+    color: #101828;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.kit .container .content .item .text p {
+    margin: 24px 0;
+    line-height: 24px;
+    color: #475467;
+}
+
+.kit .container .content .item .text button {
+    color: #3CAB90;
+    font-weight: 600;
+    line-height: 24px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.kit .container .content .item .text button i {
+    margin-left: 8px;
+}
+
+/* end kit section */
+
+/* start repair section */
+.repair{
+    background-image: url(../images/bng3.png);
+    background-size: cover;
+    background-position: center;
+    padding: var(--section-padding) 0;
+}
+
+.repair .container .content{
+    background-color: #00000091;
+    backdrop-filter: blur(10px);
+    padding: 44px;
+    border-radius: 12px;
+    width: 75%;
+    margin: auto;
+    color: var(--text-color);
+    text-align: center;
+}
+
+@media (max-width: 991px){
+    .repair .container .content{
+        width: 100%;
+    }
+}
+
+.repair .container .content h2{
+    font-size: 42px;
+    font-weight: 600;
+}
+.repair .container .content p{
+    margin-top: 32px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+@media (max-width: 991px) {
+    .repair .container .content h2{
+        font-size: 38px;
+    }
+    .repair .container .content p{
+        font-size: 18px;
+    }
+}
+/* start repair section */
