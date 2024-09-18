@@ -17,6 +17,16 @@
 body {
     font-family: "Inter", sans-serif;
 }
+/* Akazan Font */
+@font-face {
+    font-family: Akazan;
+    src: url(../fonts/akazan-bk-2\ \(1\).ttf);
+}
+
+/* @font-face {
+    font-family: AkazanBold;
+    src: url(../fonts/akazan-bold.ttf);
+} */
 
 /* Start Components */
 .container {
@@ -244,7 +254,124 @@ header .call p:last-child {
 
 /* end home section */
 
+/* start friend section */
 
+.friend .container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 23px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.friend .container .text {
+    width: 50%;
+}
+
+.friend .container .text h2 {
+    font-size: 42px;
+    font-weight: 600;
+}
+
+.friend .container .text p {
+    color: #475467;
+    margin-top: 24px;
+    line-height: 24px;
+}
+
+.friend .container .text ol {
+    margin-top: 50px;
+    counter-reset: myCounter;
+    list-style: none;
+    padding-left: 40px;
+}
+
+.friend .container .text ol li {
+    counter-increment: myCounter;
+    color: #101828;
+    font-size: 20px;
+    font-weight: 600;
+    position: relative;
+}
+
+.friend .container .text ol li::before {
+    content: "0" counter(myCounter) "/";
+    position: absolute;
+    left: -40px;
+    font-weight: bold;
+    color: #84BD3A;
+}
+
+@media (max-width: 991px) {
+    .friend .container .text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .friend .container .text p {
+        text-align: center;
+    }
+
+    .friend .container .text h2 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .friend .container .text ol {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .friend .container .text ol li,
+    .friend .container .text ol li::before {
+        font-size: 16px;
+    }
+}
+
+.friend .container .image {
+    width: fit-content;
+    position: relative;
+}
+
+.friend .container .image img {
+    display: block;
+    margin-left: auto;
+    height: 100%;
+    width: 90%;
+}
+
+.friend .container .image .box {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    width: 50%;
+    padding: 24px 30px;
+    border-radius: 12px;
+    background-color: var(--secondary-color);
+}
+
+.friend .container .image .box i {
+    font-size: 50px;
+}
+
+.friend .container .image .box p {
+    font-family: Akazan;
+    font-size: 18px;
+    color: #2A3334;
+    line-height: 20.95px;
+    margin-top: 28px;
+}
+
+@media (max-width: 991px) {
+    .friend .container .image {
+        display: none;
+    }
+}
+
+/* end friend section */
 
 
 
@@ -293,7 +420,7 @@ header .call p:last-child {
     .power .container .content h2 {
         font-size: 38px;
     }
-    
+
     .power .container .content p {
         font-size: 18px;
     }
