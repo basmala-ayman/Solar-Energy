@@ -3,6 +3,7 @@
     /* #3CAB90 */
     --secondary-color: #FFBB1C;
     --text-color: white;
+    --paragraph-color: #475467;
     --small-gap: 10px;
     --big-gap: 32px;
     --section-padding: 80px;
@@ -73,10 +74,11 @@ body {
     font-weight: 600;
     text-align: center;
     color: #101828;
+    text-transform: capitalize;
 }
 
 .title+p {
-    color: #475467;
+    color: var(--paragraph-color);
     line-height: 24px;
     text-align: center;
     margin-top: 24px;
@@ -94,6 +96,18 @@ body {
 
 .btn i {
     margin-left: 8px;
+}
+
+.sub-title {
+    color: #101828;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.sub-title+p {
+    color: var(--paragraph-color);
+    line-height: 24px;
 }
 
 /* End Components */
@@ -311,7 +325,7 @@ header .call p:last-child {
 }
 
 .friend .container .text p {
-    color: #475467;
+    color: var(--paragraph-color);
     margin-top: 24px;
     line-height: 24px;
 }
@@ -497,7 +511,7 @@ header .call p:last-child {
 .kit .container .content .item .text p {
     margin: 24px 0;
     line-height: 24px;
-    color: #475467;
+    color: var(--paragraph-color);
 }
 
 /* end kit section */
@@ -603,7 +617,7 @@ header .call p:last-child {
 }
 
 .energy .container .box:first-child p {
-    color: #475467;
+    color: var(--paragraph-color);
     font-size: 18px;
 }
 
@@ -616,10 +630,11 @@ header .call p:last-child {
 
 .energy .container .box:last-child .item {
     padding: 24px;
+    height: fit-content;
     border: 1px solid #3CAB90;
     border-radius: var(--border-radius);
     background-color: #3CAB900D;
-    height: fit-content;
+    box-shadow: 0px 4px 30px 0px #0000000D;
 }
 
 .energy .container .box:last-child .item .image {
@@ -636,14 +651,33 @@ header .call p:last-child {
     mix-blend-mode: luminosity;
 }
 
-.energy .container .box:last-child .item .text h3 {
-    color: #101828;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-}
-
 .energy .container .box:last-child .item .text p {
     margin: 20px 0;
-    line-height: 24px;
 }
+
+/* end energy section */
+
+/* start value section */
+.value {
+    padding: var(--section-padding) 0;
+}
+
+.value .container .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(295px, 1fr));
+    grid-gap: var(--big-gap);
+    margin-top: var(--big-gap);
+}
+
+.value .container .content .item{
+    padding: var(--big-gap);
+    border: 1px solid #3CAB90;
+    background-color: #3CAB900D;
+    border-radius: var(--border-radius);
+}
+
+.value .container .content .item h3{
+    margin: 20px 0;
+}
+
+/* end value section */
