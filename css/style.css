@@ -8,6 +8,7 @@
     --big-gap: 32px;
     --section-padding: 80px;
     --border-radius: 12px;
+    --paragraph-line-height: 24px;
 }
 
 * {
@@ -84,7 +85,7 @@ body {
 
 .title+p {
     color: var(--paragraph-color);
-    line-height: 24px;
+    line-height: var(--paragraph-line-height);
     text-align: center;
     margin-top: 24px;
 }
@@ -93,7 +94,7 @@ body {
     color: var(--alt-color);
     font-size: 16px;
     font-weight: 600;
-    line-height: 24px;
+    line-height: var(--paragraph-line-height);
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -112,7 +113,7 @@ body {
 
 .sub-title+p {
     color: var(--paragraph-color);
-    line-height: 24px;
+    line-height: var(--paragraph-line-height);
 }
 
 /* End Components */
@@ -323,7 +324,7 @@ header .call p:last-child {
 .friend .container .text p {
     color: var(--paragraph-color);
     margin-top: 24px;
-    line-height: 24px;
+    line-height: var(--paragraph-line-height);
 }
 
 .friend .container .text ol {
@@ -502,7 +503,7 @@ header .call p:last-child {
 
 .kit .container .content .item .text p {
     margin: 24px 0;
-    line-height: 24px;
+    line-height: var(--paragraph-line-height);
     color: var(--paragraph-color);
 }
 
@@ -893,7 +894,7 @@ footer .container .content .box:first-child ul {
 footer .container .content .box:first-child ul li a {
     text-decoration: none;
     color: var(--text-color);
-    line-height: 24px;
+    line-height: var(--paragraph-line-height);
 }
 
 @media (max-width: 767px) {
@@ -918,7 +919,7 @@ footer .container .content .box:last-child {
 
 footer .container .content .box:last-child label {
     color: var(--text-color);
-    line-height: 24px;
+    line-height: var(--paragraph-line-height);
 }
 
 footer .container .content .box:last-child .email {
@@ -950,7 +951,7 @@ footer .container .content .box:last-child .email input:first-child:focus {
 }
 
 footer .container .content .box:last-child .email input:first-child::placeholder {
-    line-height: 24px;
+    line-height: var(--paragraph-line-height);
     color: #92989F;
 }
 
