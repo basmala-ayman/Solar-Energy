@@ -289,7 +289,6 @@ header .call p:last-child {
     .home .container .content {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .home .container .content .main-btn:last-of-type {
@@ -890,16 +889,21 @@ footer .container .content .box:first-child ul {
     }
 }
 
-@media (max-width: 767px) {
-    footer .container .content .box:first-child ul {
-        gap: 16px;
-    }
-}
 
 footer .container .content .box:first-child ul li a {
     text-decoration: none;
     color: var(--text-color);
     line-height: 24px;
+}
+
+@media (max-width: 767px) {
+    footer .container .content .box:first-child ul {
+        gap: 10px;
+    }
+
+    footer .container .content .box:first-child ul li a {
+        font-size: 14px;
+    }
 }
 
 footer .container .content .box:last-child {
