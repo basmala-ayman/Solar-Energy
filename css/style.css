@@ -132,15 +132,7 @@ header .container {
     }
 }
 
-header .image {
-    width: 157px;
-    height: 54px;
-}
-
 header .image img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
     mix-blend-mode: multiply;
 }
 
@@ -576,7 +568,7 @@ header .call p:last-child {
     gap: var(--big-gap);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .energy .container {
         flex-direction: column;
     }
@@ -587,12 +579,6 @@ header .call p:last-child {
 }
 
 @media (max-width: 991px) {
-    .energy .container .box:first-child {
-        width: 50%;
-    }
-}
-
-@media (max-width: 767px) {
     .energy .container .box:first-child {
         width: 100%;
         text-align: center;
@@ -886,7 +872,7 @@ footer .container .content {
     }
 }
 
-footer .container .content .box:first-child img{
+footer .container .content .box:first-child img {
     mix-blend-mode: luminosity;
 }
 
@@ -915,12 +901,12 @@ footer .container .content .box:first-child ul li a {
     line-height: 24px;
 }
 
-footer .container .content .box:last-child{
+footer .container .content .box:last-child {
     width: 40%;
 }
 
 @media (max-width: 991px) {
-    footer .container .content .box:last-child{
+    footer .container .content .box:last-child {
         width: 80%;
     }
 }
@@ -971,7 +957,7 @@ footer .container .content .box:last-child .email input:last-child {
     margin-left: auto;
 }
 
-footer .container .foot{
+footer .container .foot {
     margin-top: 54px;
     padding-top: 50px;
     border-top: 1px solid #71777D;
@@ -980,29 +966,32 @@ footer .container .foot{
     align-items: center;
 }
 
-@media (max-width: 767px){
-    footer .container .foot{
+@media (max-width: 767px) {
+    footer .container .foot {
         flex-direction: column;
         gap: var(--small-gap);
     }
 
 }
 
-footer .container .foot ul{
+footer .container .foot ul {
     list-style: none;
     display: flex;
     gap: var(--small-gap);
     /* gap: 14px; */
 }
-footer .container .foot ul li a{
+
+footer .container .foot ul li a {
     text-decoration: none;
     padding-right: 10px;
     border-right: 1px solid #92989F;
 }
+
 footer .container .foot ul li a,
-footer .container .foot p{
+footer .container .foot p {
     color: #92989F;
     font-size: 12px;
     line-height: 16px;
 }
+
 /* end footer */
