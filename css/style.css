@@ -139,31 +139,31 @@ header .image img {
     mix-blend-mode: multiply;
 }
 
-header nav ul {
-    list-style: none;
+header nav {
     display: flex;
-    justify-content: space-between;
     gap: var(--small-gap);
 }
 
-header nav ul li {
+header nav a {
+    text-decoration: none;
     padding: 8px 28px;
-    cursor: pointer;
     font-size: 18px;
+    color: var(--text-color);
 }
 
-header nav ul li:hover {
+header nav a:hover {
     font-weight: 500;
 }
 
-header nav ul li.active {
+header nav a.active {
     background-color: #0000000F;
     border-bottom: 3px solid #0000004D;
     border-radius: 5px;
+    margin-left: 0;
 }
 
 @media (max-width: 767px) {
-    header nav ul li {
+    header nav a {
         font-size: 16px;
         padding: 4px 10px;
     }
