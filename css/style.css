@@ -417,7 +417,7 @@ header .call p:last-child {
 .power {
     background-image: url(../images/bgr2.png);
     background-size: cover;
-    background-position: center;
+    background-position: left;
 }
 
 .power .container {
