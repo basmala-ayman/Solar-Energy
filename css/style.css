@@ -508,7 +508,7 @@ header .call p:last-child {
 
 /* start repair section */
 .repair {
-    background-image: url(../images/bng3.png);
+    background-image: url(../images/repair.jpg);
     background-size: cover;
     background-position: center;
     padding: var(--section-padding) 0;
